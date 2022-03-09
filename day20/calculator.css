@@ -1,0 +1,38 @@
+
+.main-container{
+    background: red;
+    border-radius: 20px;
+}
+.span-ele{
+    color: red;
+    font-weight: bold;
+    background-color: white;
+}
+.button {
+    font-size: 20px;
+    color: white;
+    background-color: black;
+    border-width: 2px;
+    border-color: white;
+    border-style: solid;
+    width: 70px;
+    height: 70px;
+    font-weight: 700;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    cursor: pointer;
+}
+.span_1{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: right;
+}
+.history_section{
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+}
+.li-list{
+    font-size: 20px;
+    font-weight: bold;
+}

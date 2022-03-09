@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Image slider</h1>
+    <button onclick="previous()">Previous</button>
+    <img src="../imageslider/images/1-2-lamborghini-png.png" id="image" alt="image-slider" width="400" height="200">
+    <button onclick="next()">Next</button>
+    <script>
+        let arr=["../imageslider/images/1-2-lamborghini-png.png",
+                    "../imageslider/images/2-2-lamborghini-png-file.png",
+                    "../imageslider/images/2-black-r8-audi-png-car-image.png",
+                    "../imageslider/images/5-2-car-png-pic.png",
+                    "../imageslider/images/6-red-r8-audi-png-car-image.png"
+                ]
+        let imgele=document.getElementById("image")
+        time=0;
+        imgele.src=arr[time]
+        function previous(){
+            console.log(time)
+            if (time<arr.length-1){
+                time++;
+                imgele.src=arr[time];
+            }else{
+                time=0;
+            }
+        }
+        function next(){
+            console.log(time)
+            if (time>0){
+                time--;
+                imgele.src=arr[time]
+                
+            }else{
+                time=arr.length
+            }
+        }
+    </script>
+</body>
+</html>
